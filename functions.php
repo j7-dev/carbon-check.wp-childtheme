@@ -1,23 +1,27 @@
 <?php
+
 /**
  * Theme functions and definitions
  *
  * @package HelloElementorChild
  */
 
+include_once(__DIR__ . '/yc_custom/includes.php');
+
 /**
  * Load child theme css and optional scripts
  *
  * @return void
  */
-function hello_elementor_child_enqueue_scripts() {
-	wp_enqueue_style(
-		'hello-elementor-child-style',
-		get_stylesheet_directory_uri() . '/style.css',
-		[
-			'hello-elementor-theme-style',
-		],
-		'1.0.0'
-	);
+function hello_elementor_child_enqueue_scripts()
+{
+  wp_enqueue_style(
+    'hello-elementor-child-style',
+    get_stylesheet_directory_uri() . '/style.css',
+    [
+      'hello-elementor-theme-style',
+    ],
+    '1.0.0'
+  );
 }
-add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 20 );
+add_action('wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 20);
