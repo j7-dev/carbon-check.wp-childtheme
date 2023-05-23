@@ -19,6 +19,7 @@ if (!is_user_logged_in()) :
 <?php else : ?>
   <div style="padding:2rem;">
     <div id="carbon-check-app"></div>
+		<carbon-check-app></carbon-check-app>
   </div>
 <?php endif; ?>
 
