@@ -15,10 +15,18 @@
       $(".min-h-100vh").css("min-height", pageH + diff);
     }
 
-    translate();
+    const locale = getLocale();
+
+    translate(locale);
   });
 
-  function translate() {
+  function getLocale() {
+    const locale = $("html").attr("lang");
+    return locale;
+  }
+
+  function translate(locale) {
+    if ("zh-TW" === locale) return;
     const mapping = {
       "Log out": "登出",
       "Account or E-mail": "帳號或 E-mail",
