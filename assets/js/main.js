@@ -72,7 +72,11 @@
       });
     });
 
-    const urlMapping = ["register", "%e5%bf%98%e8%a8%98%e5%af%86%e7%a2%bc"];
+    const urlMapping = [
+      "login",
+      "register",
+      "%e5%bf%98%e8%a8%98%e5%af%86%e7%a2%bc",
+    ];
 
     urlMapping.forEach(function (value) {
       $(`a[href*="${value}"]`).each(function () {
