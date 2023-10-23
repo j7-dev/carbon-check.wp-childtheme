@@ -37,6 +37,8 @@
       "E-mail": "電子郵件地址",
       "Confirm Password": "確認Password",
       "Log in": "登入",
+      Profile: "帳號設定",
+      "Account Setting": "Account設定",
     };
 
     // 遍歷mapping物件，並在selector內查找包含特定文本的元素，然後替換文本
