@@ -71,5 +71,22 @@
         $(this).attr("placeholder", key);
       });
     });
+
+    const urlMapping = ["register", "%e5%bf%98%e8%a8%98%e5%af%86%e7%a2%bc"];
+
+    urlMapping.forEach(function (value) {
+      $(`a[href*="${value}"]`).each(function () {
+        $(this).attr(
+          "href",
+          $(this).attr("href").replace(value, `en/${value}`)
+        );
+      });
+    });
+
+    $.each(placeholderMapping, function (key, value) {
+      $(`input[placeholder="${value}"]`).each(function () {
+        $(this).attr("placeholder", key);
+      });
+    });
   }
 })(jQuery);
